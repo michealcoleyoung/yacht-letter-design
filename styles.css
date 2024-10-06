@@ -1,0 +1,13 @@
+#outputText {
+    margin-top: 50px;
+    border: 5px solid black;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 40px;
+    max-height: 250px;
+}
+
+
+.full-width-button {
+    padding: 25px;
+}

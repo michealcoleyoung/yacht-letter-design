@@ -29,7 +29,7 @@
     </div>
 
     <h3>Add Text</h3>
-    <input type="text" id="textInput" hx-target="#outputText" class="form-control" placeholder="Enter your text here"
+    <input type="text" id="textInput" oninput="updateText()" class="form-control" placeholder="Enter your text here"
       maxlength="32" />
 
     <select class="form-select form-select-lg">
@@ -43,6 +43,8 @@
 
     <input type="checkbox" id="italic" name="italix" />
     <label for="italic">Italic</label>
+
+    
   </div>
 
   <script src="index.js"></script>

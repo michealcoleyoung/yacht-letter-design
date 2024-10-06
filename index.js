@@ -16,3 +16,13 @@ function updateTextStyle() {
     outputText.style.fontWeight = bold.checked ? 'bold' : 'normal';
     outputText.style.fontStyle = italic.checked ? 'italic' : 'normal';
 }
+
+
+let currentLetterSpacing = 0; // set current spacing to 0
+function adjustLetterSpacing(amount) {
+    currentLetterSpacing += amount; // Adjust the current letter-spacing
+    currentLetterSpacing = Math.max(0, currentLetterSpacing); // Ensure it doesn't go below 0
+    outputText.style.letterSpacing = `${currentLetterSpacing}px`; // Apply the current letter-spacing to the text
+
+}
+
